@@ -28,6 +28,13 @@ nav ul li a:hover, nav ul li a:focus {
 }
 
 
+nav a#logo {
+  color: pink;
+  font-weight: 900;
+  margin-left: : 10px;
+  font-size: 2rem;
+ text-decoration: none;
+
 
 h5{
      display: flex;
