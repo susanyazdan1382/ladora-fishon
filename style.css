@@ -1,74 +1,88 @@
 
-ul , a{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+
+h3{
+  display: flex;
+  justify-content: center;
 }
+
+
+
+
+/* Reset default styles */
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Global styles*/
+/* body{
+font-family: Arial , sans-serif;
+background-color: #f8f8f8;
+color: #333;
+} */
+
+/* .container{
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+
+} */
+
+/* Header styles*/
+/* Header styles*/
 header{
-    background-color:#F0ECE5;
-    padding: 30 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px;
+  padding: 20px 0;
+  transition: background-color 0.3s ease;
+
 }
-nav ul {
-   display: flex;
-justify-content: flex-end;
-}
-nav ul li{
-   margin:0 20px;
-}
-nav ul li a {
-   color:#1B1A55;
-   font-size: 20px;
-   padding:5px 10px;
-   border-radius: 10px;
-   transition: background-color 0.5s;
-}
-nav ul li a:hover, nav ul li a:focus {
-   background-color: pink;
+#categoris{
+  background-color: #f5f5f5;
+  padding: 40px 0;
 }
 
-
-nav a#logo {
-  color: pink;
-  font-weight: 900;
-  margin-left: : 10px;
-  font-size: 2rem;
- text-decoration: none;
-
-
-h5{
-     display: flex;
-     justify-content: center;
+#categoris .container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
+.category{
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba( 0, 0, 0, 0.1);
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
 
-   @keyframes fadeinout{
-0%{
+.category ::after{
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.3);
   opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
 }
-50%{
+
+.category:hover::after {
   opacity: 1;
 }
-100%{
-  opacity: 0;
+.category:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
-      .item {
-       display:flex;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        }
-
-
-     footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 5px;
-      /* position: fixed; */
-        bottom: 0;
-        width: 100%;
-     }
+.category img{
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  transition: transform 0.3s ease;
+}
