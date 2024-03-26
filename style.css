@@ -188,6 +188,11 @@ p{
 
 }
 
+.card:hover{
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
 .category button{
   border: none;
   outline: 0;
