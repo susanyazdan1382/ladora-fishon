@@ -1,14 +1,3 @@
-
-
-
-.user {
-border-radius: 80%;
-  display: grid;
-gap:10px;
-
-}
-
-
 .body-text {
 
   display: flex;
@@ -37,17 +26,23 @@ nav {
 
   font-family:  sans-serif;
 
+
+}
+.heading{
+  color: white;
 }
 
-.heading {
+.heading:hover {
 
-  color: white;
+  color: #AD88C6;
 
   text-transform: uppercase;
 
   letter-spacing: 3px;
 
   font-size: 20px;
+
+
 
 }
 
@@ -58,6 +53,7 @@ nav {
   justify-content: space-around;
 
   width: 30%;
+
 
 }
 
@@ -80,6 +76,7 @@ nav {
   font-size: 14px;
 
   padding: 14px 16px;
+  border-radius: 40px;
 
 }
 
@@ -88,17 +85,6 @@ nav {
   background-color:#B784B7;
 
 }
-
-
-/*
-
-h3{
-  display: flex;
-  justify-content: center;
-} */
-
-
-
 
 /* Reset default styles */
 *{
@@ -141,11 +127,28 @@ header{
   justify-content: center;
 }
 
+h3{
+  display: flex;
+  justify-content: center;
+}
+
+#featured{
+  display: flex;
+  flex-direction: row;
+justify-content: center;
+padding: 20px;
+ line-height: 30px;
+ flex-wrap: wrap;
+ border-radius: 30px;
+
+}
+
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 350px;
   margin: 10PX;
+
 text-align: center;
 
   font-family: arial;
@@ -157,6 +160,9 @@ text-align: center;
 
 }
 
+p{
+    text-align: center;
+}
 .price {
   color: grey;
   font-size: 20px;
@@ -167,7 +173,7 @@ text-align: center;
 .card button {
   border: none;
   outline: 0;
-  padding: 12px;
+  padding: 20px;
   color: white;
   background-color: #000;
   text-align: center;
@@ -223,7 +229,30 @@ text-align: center;
 }
 
 
+#Product{
+  display:flex;
+  flex-direction: column;
+}
 
+.user {
+border-radius: 80%;
+  display: grid;
+gap:10px;
+margin: 10px;
+margin-left: 10px;
+}
+
+.item{
+  display: flex;
+  flex-direction: row;
+align-items: center;
+}
+
+.image{
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
 footer {
      background-color: #BB9CC0;
      color: white;
